@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://liuxiaoshaui.github.io">
-  <title>Hello World | 萌新小帅</title>
+  <title>Java实现冒泡排序 | 萌新小帅</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="一、冒泡排序：利用冒泡排序对数组进行排序">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://liuxiaoshaui.github.io/2021/01/27/hello-world/index.html">
+<meta property="og:title" content="Java实现冒泡排序">
+<meta property="og:url" content="https://liuxiaoshaui.github.io/2021/01/29/Java%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/index.html">
 <meta property="og:site_name" content="萌新小帅">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="一、冒泡排序：利用冒泡排序对数组进行排序">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-27T06:15:42.179Z">
-<meta property="article:modified_time" content="2021-01-28T08:26:38.958Z">
+<meta property="article:published_time" content="2021-01-29T14:26:49.000Z">
+<meta property="article:modified_time" content="2021-01-29T14:32:21.592Z">
 <meta property="article:author" content="shuai">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="萌新小帅" type="application/atom+xml">
@@ -163,14 +164,14 @@
           </div>
           <div id="js-content" class="content-ll">
             
-<article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+<article id="post-Java实现冒泡排序" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Java实现冒泡排序
     </h1>
   
 
@@ -185,25 +186,20 @@
   </a>
   
         
-        <a href="/2021/01/27/hello-world/" class="archive-article-date">
-  	<time datetime="2021-01-27T06:15:42.179Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-27</time>
+        <a href="/2021/01/29/Java%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" class="archive-article-date">
+  	<time datetime="2021-01-29T14:26:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+        <h2 id="一、冒泡排序："><a href="#一、冒泡排序：" class="headerlink" title="一、冒泡排序："></a>一、冒泡排序：</h2><p>利用冒泡排序对数组进行排序</p>
 <a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<h2 id="二、基本概念："><a href="#二、基本概念：" class="headerlink" title="二、基本概念："></a>二、基本概念：</h2><p>依次比较相邻的两个数，将小数放在前面，大数放在后面。即在第一趟：首先比较第1个和第2个数，将小数放前，大数放后。然后比较第2个数和第3个数，将小数放前，大数放后，如此继续，直至比较最后两个数，将小数放前，大数放后。至此第一趟结束，将最大的数放到了最后。在第二趟：仍从第一对数开始比较（因为可能由于第2个数和第3个数的交换，使得第1个数不再小于第2个数），将小数放前，大数放后，一直比较到倒数第二个数（倒数第一的位置上已经是最大的），第二趟结束，在倒数第二的位置上得到一个新的最大数（其实在整个数列中是第二大的数）。如此下去，重复以上过程，直至最终完成排序。</p>
+<h2 id="三、实现思路："><a href="#三、实现思路：" class="headerlink" title="三、实现思路："></a>三、实现思路：</h2><p>用二重循环实现，外循环变量设为i，内循环变量设为j。外层控制循环多少趟，内层控制每一趟的循环次数。</p>
+<h2 id="四、代码："><a href="#四、代码：" class="headerlink" title="四、代码："></a>四、代码：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">    &#x2F;&#x2F; TODO Auto-generated method stub</span><br><span class="line">    &#x2F;&#x2F; 冒泡排序</span><br><span class="line">    int[] num &#x3D; new int[5];&#x2F;&#x2F; 声明数组</span><br><span class="line">    Scanner sc &#x3D; new Scanner(System.in);</span><br><span class="line">    System.out.println(&quot;请输入五个数&quot;);</span><br><span class="line">    for (int i &#x3D; 0; i &lt; num.length; i++) &#123;</span><br><span class="line">      num[i] &#x3D; sc.nextInt();</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F; 数组排序</span><br><span class="line">    for (int i &#x3D; 0; i &lt; num.length; i++) &#123;&#x2F;&#x2F; 比较的趟数 n</span><br><span class="line">      for (int j &#x3D; 0; j &lt; num.length - i - 1; j++) &#123;&#x2F;&#x2F; 每一趟比较的次数 n-i-1</span><br><span class="line">        &#x2F;&#x2F; 比较交换</span><br><span class="line">        if (num[j] &gt; num[j + 1]) &#123;</span><br><span class="line">          int tem &#x3D; 0;</span><br><span class="line">          tem &#x3D; num[j];</span><br><span class="line">          num[j] &#x3D; num[j + 1];</span><br><span class="line">          num[j + 1] &#x3D; tem;</span><br><span class="line">        &#125;</span><br><span class="line">​</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F; 遍历数组看比较的结果</span><br><span class="line">    for (int i &#x3D; 0; i &lt; num.length; i++) &#123;</span><br><span class="line">      System.out.println(num[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="希望以上所述对大家的java程序设计有所帮助"><a href="#希望以上所述对大家的java程序设计有所帮助" class="headerlink" title="希望以上所述对大家的java程序设计有所帮助"></a>希望以上所述对大家的java程序设计有所帮助</h4>
       
 
       
@@ -242,6 +238,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -292,7 +299,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://liuxiaoshaui.github.io.github.io/2021/01/27/hello-world/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://liuxiaoshaui.github.io.github.io/2021/01/29/Java%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -306,15 +313,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/01/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          我的第一篇博客
-        
-      </div>
-    </a>
   
+    <a href="/2021/01/28/%E4%BD%A0%E7%9C%9F%E7%9A%84%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88%E6%98%AF%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%90%97%EF%BC%9F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">你真的知道什么是前后端分离吗？</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -339,7 +342,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">一、冒泡排序：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">二、基本概念：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF%EF%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">三、实现思路：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E4%BB%A3%E7%A0%81%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">四、代码：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%8C%E6%9C%9B%E4%BB%A5%E4%B8%8A%E6%89%80%E8%BF%B0%E5%AF%B9%E5%A4%A7%E5%AE%B6%E7%9A%84java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%9C%89%E6%89%80%E5%B8%AE%E5%8A%A9"><span class="toc-number">4.0.1.</span> <span class="toc-text">希望以上所述对大家的java程序设计有所帮助</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
