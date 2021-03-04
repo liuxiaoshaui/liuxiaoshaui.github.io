@@ -6,16 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://liuxiaoshaui.github.io">
-  <title>萌新小帅</title>
+  <title>Linux常用命令（重点） | 萌新小帅</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="技术博客，并发编程，Java,算法">
-<meta property="og:type" content="website">
-<meta property="og:title" content="萌新小帅">
-<meta property="og:url" content="https://liuxiaoshaui.github.io/index.html">
+  <meta name="description" content="常用的基本命令目录管理绝对路径和相对路径 我们知道Linux的目录结构为树状结构，最顶级的目录为根目录 &#x2F;。  其他目录通过挂载可以将它们添加到树中，通过解除挂载可以移除它们。  在开始本教程前我们需要先知道什么是绝对路径与相对路径。   绝对路径： 路径的写法，由根目录 &#x2F; 写起，例如：&#x2F;usr&#x2F;local 这个目录。  相对路径： 路径的写法，不是由 &#x2F; 写起，例如由 &#x2F;usr&#x2F;share&#x2F;d">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux常用命令（重点）">
+<meta property="og:url" content="https://liuxiaoshaui.github.io/2021/03/04/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89/index.html">
 <meta property="og:site_name" content="萌新小帅">
-<meta property="og:description" content="技术博客，并发编程，Java,算法">
+<meta property="og:description" content="常用的基本命令目录管理绝对路径和相对路径 我们知道Linux的目录结构为树状结构，最顶级的目录为根目录 &#x2F;。  其他目录通过挂载可以将它们添加到树中，通过解除挂载可以移除它们。  在开始本教程前我们需要先知道什么是绝对路径与相对路径。   绝对路径： 路径的写法，由根目录 &#x2F; 写起，例如：&#x2F;usr&#x2F;local 这个目录。  相对路径： 路径的写法，不是由 &#x2F; 写起，例如由 &#x2F;usr&#x2F;share&#x2F;d">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-03-04T10:24:52.000Z">
+<meta property="article:modified_time" content="2021-03-04T10:36:58.499Z">
 <meta property="article:author" content="shuai">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="萌新小帅" type="application/atom+xml">
@@ -161,20 +164,27 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-    <article id="post-Linux常用命令（重点）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+<article id="post-Linux常用命令（重点）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/04/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89/">Linux常用命令（重点）</a>
+    <h1 class="article-title" itemprop="name">
+      Linux常用命令（重点）
     </h1>
   
 
 	<!--显示阅读次数-->
 
+  <br/>
+  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  <span class="icon-sort"></span>
+  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+  </span>
+  </a>
+  
         
         <a href="/2021/03/04/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89/" class="archive-article-date">
   	<time datetime="2021-03-04T10:24:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-04</time>
@@ -198,12 +208,128 @@
 <h5 id="相对路径："><a href="#相对路径：" class="headerlink" title="相对路径："></a>相对路径：</h5><ul>
 <li>路径的写法，不是由 / 写起，例如由 /usr/share/doc 要到 /usr/share/man 底下时，可以写成：cd ../man 这就是相对路径的写法啦！</li>
 </ul>
-<h4 id="处理目录的常用命令"><a href="#处理目录的常用命令" class="headerlink" title="处理目录的常用命令"></a>处理目录的常用命令</h4><h5 id="接下来我们就来看几个常见的处理目录的命令吧："><a href="#接下来我们就来看几个常见的处理目录的命令吧：" class="headerlink" title="接下来我们就来看几个常见的处理目录的命令吧："></a>接下来我们就来看几个常见的处理目录的命令吧：</h5>
-        
-          <a class="article-more-a" href="/2021/03/04/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89/#more">more >></a>
-        
+<h4 id="处理目录的常用命令"><a href="#处理目录的常用命令" class="headerlink" title="处理目录的常用命令"></a>处理目录的常用命令</h4><h5 id="接下来我们就来看几个常见的处理目录的命令吧："><a href="#接下来我们就来看几个常见的处理目录的命令吧：" class="headerlink" title="接下来我们就来看几个常见的处理目录的命令吧："></a>接下来我们就来看几个常见的处理目录的命令吧：</h5><a id="more"></a>
+<blockquote>
+<p>ls: 列出目录<br>cd：切换目录<br>pwd：显示目前的目录<br>mkdir：创建一个新的目录<br>rmdir：删除一个空的目录<br>cp: 复制文件或目录<br>rm: 移除文件或目录<br>mv: 移动文件与目录，或修改文件与目录的名称<br>你可以使用 man [命令] 来查看各个命令的使用文档，如 ：man cp。</p>
+</blockquote>
+<h4 id="ls-（列出目录）"><a href="#ls-（列出目录）" class="headerlink" title="ls （列出目录）"></a>ls （列出目录）</h4><blockquote>
+<p>在Linux系统当中， ls 命令可能是最常被运行的。<br>选项与参数：<br>-a ：全部的文件，连同隐藏文件( 开头为 . 的文件) 一起列出来(常用)<br>-l ：长数据串列出，包含文件的属性与权限等等数据；(常用)</p>
+</blockquote>
+<h4 id="cd-（切换目录）"><a href="#cd-（切换目录）" class="headerlink" title="cd （切换目录）"></a>cd （切换目录）</h4><blockquote>
+<p>cd是Change Directory的缩写，这是用来变换工作目录的命令。<br>语法：cd  路径（相对路径/全路径）<br>示例：<br>        cd .. 向上跳一级<br>        cd 目录 进入目录</p>
+</blockquote>
+<h4 id="pwd-显示目前所在的目录"><a href="#pwd-显示目前所在的目录" class="headerlink" title="pwd ( 显示目前所在的目录 )"></a>pwd ( 显示目前所在的目录 )</h4><blockquote>
+<p>pwd 是 Print Working Directory 的缩写，也就是显示目前所在目录的命令。<br>选项与参数：-P ：显示出确实的路径，而非使用连接(link) 路径。</p>
+</blockquote>
+<h4 id="mkdir-（创建新目录）"><a href="#mkdir-（创建新目录）" class="headerlink" title="mkdir （创建新目录）"></a>mkdir （创建新目录）</h4><blockquote>
+<p>如果想要创建新的目录的话，那么就使用mkdir (make directory)吧。<br>语法：mkdir 路径<br>选项与参数：<br>-m ：配置文件的权限喔！直接配置，不需要看默认权限 (umask) 的脸色～<br>-p ：帮助你直接将所需要的目录(包含上一级目录)递归创建起来！</p>
+</blockquote>
+<h4 id="rmdir-删除空的目录"><a href="#rmdir-删除空的目录" class="headerlink" title="rmdir ( 删除空的目录 )"></a>rmdir ( 删除空的目录 )</h4><blockquote>
+<p>语法：rmdir -p 目录名称<br>选项与参数：-p ：连同上一级『空的』目录也一起删除</p>
+</blockquote>
+<h4 id="cp-复制文件或目录"><a href="#cp-复制文件或目录" class="headerlink" title="cp ( 复制文件或目录 )"></a>cp ( 复制文件或目录 )</h4><blockquote>
+<p>语法：<br>        cp 原文件路径 新文件路径<br>        cp -r 原文件夹路径 新文件夹路径<br>选项与参数：<br>-a：相当于 -pdr 的意思(常用)<br>-p：连同文件的属性一起复制过去，而非使用默认属性(备份常用)；<br>-d：若来源档为连结档的属性(link file)，则复制连结档属性而非文件本身；<br>-r：递归持续复制，用於目录的复制行为；(常用)<br>-f：为强制(force)的意思，若目标文件已经存在且无法开启，<br>-i：若目标档(destination)已经存在时，在覆盖时会先询问动作的进行(常用)<br>-l：进行硬式连结(hard link)的连结档创建，而非复制文件本身。<br>-s：复制；<br>-u：若 destination 比 source 旧才升级 destination ！</p>
+</blockquote>
+<h4 id="rm-移除文件或目录"><a href="#rm-移除文件或目录" class="headerlink" title="rm ( 移除文件或目录 )"></a>rm ( 移除文件或目录 )</h4><blockquote>
+<p>语法：rm -fir 文件/目录<br>选项与参数：<br>-f ：就是 force 的意思，忽略不存在的文件，不会出现警告信息；<br>-i ：互动模式，在删除前会询问使用者是否动作<br>-r ：递归删除啊！最常用在目录的删除了！这是非常危险的选项！！！</p>
+</blockquote>
+<h4 id="mv-移动文件与目录，或修改名称"><a href="#mv-移动文件与目录，或修改名称" class="headerlink" title="mv  ( 移动文件与目录，或修改名称 )"></a>mv  ( 移动文件与目录，或修改名称 )</h4><blockquote>
+<p>语法：mv 原文件路径 新文件路径<br>选项与参数：<br>-f ：force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖；<br>-i ：若目标文件 (destination) 已经存在时，就会询问是否覆盖！<br>-u ：若目标文件已经存在，且 source 比较新，才会升级 (update)</p>
+</blockquote>
+<h4 id="cat-由第一行开始显示文件内容"><a href="#cat-由第一行开始显示文件内容" class="headerlink" title="cat 由第一行开始显示文件内容"></a>cat 由第一行开始显示文件内容</h4><blockquote>
+<p>语法：cat 文件路径</p>
+</blockquote>
+<h4 id="tac"><a href="#tac" class="headerlink" title="tac"></a>tac</h4><blockquote>
+<p>tac与cat命令刚好相反，文件内容从最后一行开始显示，可以看出 tac 是 cat 的倒着写！</p>
+</blockquote>
+<h4 id="more-一页一页翻动"><a href="#more-一页一页翻动" class="headerlink" title="more  一页一页翻动"></a>more  一页一页翻动</h4><blockquote>
+<p>在 more 这个程序的运行过程中，你有几个按键可以按的：<br>空白键 (space)：代表向下翻一页；<br>Enter     ：代表向下翻『一行』；<br>/字串     ：代表在这个显示的内容当中，向下搜寻『字串』这个关键字；<br>:f      ：立刻显示出档名以及目前显示的行数；<br>q       ：代表立刻离开 more ，不再显示该文件内容。<br>b 或 [ctrl]-b ：代表往回翻页，不过这动作只对文件有用，对管线无用。</p>
+</blockquote>
+<h4 id="less-一页一页翻动"><a href="#less-一页一页翻动" class="headerlink" title="less   一页一页翻动"></a>less   一页一页翻动</h4><blockquote>
+<p>less运行时可以输入的命令有：<br>空白键  ：向下翻动一页；<br>[pagedown]：向下翻动一页；<br>[pageup] ：向上翻动一页；<br>/字串   ：向下搜寻『字串』的功能；<br>?字串   ：向上搜寻『字串』的功能；<br>n     ：重复前一个搜寻 (与 / 或 ? 有关！)<br>N     ：反向的重复前一个搜寻 (与 / 或 ? 有关！)<br>q     ：离开 less 这个程序；</p>
+</blockquote>
+<h4 id="head-取出文件前面几行"><a href="#head-取出文件前面几行" class="headerlink" title="head  取出文件前面几行"></a>head  取出文件前面几行</h4><blockquote>
+<p>语法：head -n 目录<br>选项与参数：-n 后面接数字，代表显示几行的意思！<br>默认的情况中，显示前面 10 行！</p>
+</blockquote>
+<h4 id="tail-取出文件后面几行"><a href="#tail-取出文件后面几行" class="headerlink" title="tail  取出文件后面几行"></a>tail  取出文件后面几行</h4><blockquote>
+<p>语法：tail -n 目录<br>选项与参数：<br>-n ：后面接数字，代表显示几行的意思<br>默认的情况中，显示最后 10 行！</p>
+</blockquote>
+<h4 id="vi-vim"><a href="#vi-vim" class="headerlink" title="vi/vim"></a>vi/vim</h4><h6 id="以下是常用的几个命令："><a href="#以下是常用的几个命令：" class="headerlink" title="以下是常用的几个命令："></a>以下是常用的几个命令：</h6><blockquote>
+<dl><dt>i 切换到输入模式，以输入字符。<br>x 删除当前光标所在处的字符。</dt><dd>切换到底线命令模式，以在最底一行输入命令。</dd></dl></blockquote>
+<h6 id="在输入模式中，可以使用以下按键："><a href="#在输入模式中，可以使用以下按键：" class="headerlink" title="在输入模式中，可以使用以下按键："></a>在输入模式中，可以使用以下按键：</h6><blockquote>
+<p>符按键以及Shift组合，输入字符<br>ENTER，回车键，换行<br>BACK SPACE，退格键，删除光标前一个字符<br>DEL，删除键，删除光标后一个字符<br>方向键，在文本中移动光标<br>HOME/END，移动光标到行首/行尾<br>Page Up/Page Down，上/下翻页<br>Insert，切换光标为输入/替换模式，光标将变成竖线/下划线<br>ESC，退出输入模式，切换到命令模式</p>
+</blockquote>
+<h6 id="在命令模式下按下-（英文冒号）就进入了底线命令模式。"><a href="#在命令模式下按下-（英文冒号）就进入了底线命令模式。" class="headerlink" title="在命令模式下按下:（英文冒号）就进入了底线命令模式。"></a>在命令模式下按下:（英文冒号）就进入了底线命令模式。</h6><ul>
+<li><p>q 退出程序</p>
+</li>
+<li><p>w 保存文件</p>
+</li>
+</ul>
+<h5 id="防火墙："><a href="#防火墙：" class="headerlink" title="防火墙："></a>防火墙：</h5><pre><code>关闭防火墙：
+
+# service firewalld stop
+
+扩充：
+
+所有系统服务都是
+
+service xxxxxx start/stop/status/restart
+
+让防火墙开机不自动启动
+
+# systemctl disable firewalld
+
+systemctl enable firewalld 开机自启动
+</code></pre>
+<h5 id="查看firewall服务状态"><a href="#查看firewall服务状态" class="headerlink" title="查看firewall服务状态"></a>查看firewall服务状态</h5><ul>
+<li>systemctl status firewalld</li>
+</ul>
+<h5 id="开启、重启、关闭、firewalld-service服务"><a href="#开启、重启、关闭、firewalld-service服务" class="headerlink" title="开启、重启、关闭、firewalld.service服务"></a>开启、重启、关闭、firewalld.service服务</h5><h5 id="开启"><a href="#开启" class="headerlink" title="开启"></a>开启</h5><ul>
+<li>service firewalld start<h5 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h5></li>
+<li>service firewalld restart<h5 id="关闭"><a href="#关闭" class="headerlink" title="关闭"></a>关闭</h5></li>
+<li>service firewalld stop</li>
+</ul>
+<h5 id="查看防火墙规则"><a href="#查看防火墙规则" class="headerlink" title="查看防火墙规则"></a>查看防火墙规则</h5><ul>
+<li>firewall-cmd –list-all    # 查看全部信息</li>
+<li>firewall-cmd –list-ports  # 只看端口信息</li>
+</ul>
+<h5 id="开启端口"><a href="#开启端口" class="headerlink" title="开启端口"></a>开启端口</h5><blockquote>
+<p>开端口命令：firewall-cmd –zone=public –add-port=80/tcp –permanent<br>重启防火墙：systemctl restart firewalld.service<br>命令含义：<br>–zone #作用域<br>–add-port=80/tcp  #添加端口，格式为：端口/通讯协议<br>–permanent   #永久生效，没有此参数重启后失效</p>
+</blockquote>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/apy.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wx2.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -223,16 +349,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/04/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://liuxiaoshaui.github.io.github.io/2021/03/04/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2021/02/07/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAVue%E9%A1%B9%E7%9B%AE%EF%BC%9F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何创建一个Vue项目？</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -247,606 +432,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-如何创建一个Vue项目？" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/07/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAVue%E9%A1%B9%E7%9B%AE%EF%BC%9F/">如何创建一个Vue项目？</a>
-    </h1>
-  
-
-	<!--显示阅读次数-->
-
-        
-        <a href="/2021/02/07/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAVue%E9%A1%B9%E7%9B%AE%EF%BC%9F/" class="archive-article-date">
-  	<time datetime="2021-02-07T08:57:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-创建一个名为hello-vue的工程"><a href="#1-创建一个名为hello-vue的工程" class="headerlink" title="1.创建一个名为hello-vue的工程"></a>1.创建一个名为hello-vue的工程</h3><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack hello-vue</span><br></pre></td></tr></table></figure>
-</code></pre>
-        
-          <a class="article-more-a" href="/2021/02/07/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAVue%E9%A1%B9%E7%9B%AE%EF%BC%9F/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/07/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAVue%E9%A1%B9%E7%9B%AE%EF%BC%9F/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">常用的基本命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">目录管理</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%92%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">1.0.0.1.1.</span> <span class="toc-text">绝对路径和相对路径</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%EF%BC%9A"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">绝对路径：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%EF%BC%9A"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">相对路径：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E7%9B%AE%E5%BD%95%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.0.1.</span> <span class="toc-text">处理目录的常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%88%91%E4%BB%AC%E5%B0%B1%E6%9D%A5%E7%9C%8B%E5%87%A0%E4%B8%AA%E5%B8%B8%E8%A7%81%E7%9A%84%E5%A4%84%E7%90%86%E7%9B%AE%E5%BD%95%E7%9A%84%E5%91%BD%E4%BB%A4%E5%90%A7%EF%BC%9A"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">接下来我们就来看几个常见的处理目录的命令吧：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ls-%EF%BC%88%E5%88%97%E5%87%BA%E7%9B%AE%E5%BD%95%EF%BC%89"><span class="toc-number">1.0.2.</span> <span class="toc-text">ls （列出目录）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cd-%EF%BC%88%E5%88%87%E6%8D%A2%E7%9B%AE%E5%BD%95%EF%BC%89"><span class="toc-number">1.0.3.</span> <span class="toc-text">cd （切换目录）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pwd-%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%89%8D%E6%89%80%E5%9C%A8%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="toc-number">1.0.4.</span> <span class="toc-text">pwd ( 显示目前所在的目录 )</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mkdir-%EF%BC%88%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9B%AE%E5%BD%95%EF%BC%89"><span class="toc-number">1.0.5.</span> <span class="toc-text">mkdir （创建新目录）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rmdir-%E5%88%A0%E9%99%A4%E7%A9%BA%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="toc-number">1.0.6.</span> <span class="toc-text">rmdir ( 删除空的目录 )</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cp-%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95"><span class="toc-number">1.0.7.</span> <span class="toc-text">cp ( 复制文件或目录 )</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rm-%E7%A7%BB%E9%99%A4%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95"><span class="toc-number">1.0.8.</span> <span class="toc-text">rm ( 移除文件或目录 )</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mv-%E7%A7%BB%E5%8A%A8%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%EF%BC%8C%E6%88%96%E4%BF%AE%E6%94%B9%E5%90%8D%E7%A7%B0"><span class="toc-number">1.0.9.</span> <span class="toc-text">mv  ( 移动文件与目录，或修改名称 )</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cat-%E7%94%B1%E7%AC%AC%E4%B8%80%E8%A1%8C%E5%BC%80%E5%A7%8B%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9"><span class="toc-number">1.0.10.</span> <span class="toc-text">cat 由第一行开始显示文件内容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tac"><span class="toc-number">1.0.11.</span> <span class="toc-text">tac</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#more-%E4%B8%80%E9%A1%B5%E4%B8%80%E9%A1%B5%E7%BF%BB%E5%8A%A8"><span class="toc-number">1.0.12.</span> <span class="toc-text">more  一页一页翻动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#less-%E4%B8%80%E9%A1%B5%E4%B8%80%E9%A1%B5%E7%BF%BB%E5%8A%A8"><span class="toc-number">1.0.13.</span> <span class="toc-text">less   一页一页翻动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#head-%E5%8F%96%E5%87%BA%E6%96%87%E4%BB%B6%E5%89%8D%E9%9D%A2%E5%87%A0%E8%A1%8C"><span class="toc-number">1.0.14.</span> <span class="toc-text">head  取出文件前面几行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tail-%E5%8F%96%E5%87%BA%E6%96%87%E4%BB%B6%E5%90%8E%E9%9D%A2%E5%87%A0%E8%A1%8C"><span class="toc-number">1.0.15.</span> <span class="toc-text">tail  取出文件后面几行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#vi-vim"><span class="toc-number">1.0.16.</span> <span class="toc-text">vi&#x2F;vim</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8B%E6%98%AF%E5%B8%B8%E7%94%A8%E7%9A%84%E5%87%A0%E4%B8%AA%E5%91%BD%E4%BB%A4%EF%BC%9A"><span class="toc-number">1.0.16.0.1.</span> <span class="toc-text">以下是常用的几个命令：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%9C%A8%E8%BE%93%E5%85%A5%E6%A8%A1%E5%BC%8F%E4%B8%AD%EF%BC%8C%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E4%BB%A5%E4%B8%8B%E6%8C%89%E9%94%AE%EF%BC%9A"><span class="toc-number">1.0.16.0.2.</span> <span class="toc-text">在输入模式中，可以使用以下按键：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%9C%A8%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%8C%89%E4%B8%8B-%EF%BC%88%E8%8B%B1%E6%96%87%E5%86%92%E5%8F%B7%EF%BC%89%E5%B0%B1%E8%BF%9B%E5%85%A5%E4%BA%86%E5%BA%95%E7%BA%BF%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%E3%80%82"><span class="toc-number">1.0.16.0.3.</span> <span class="toc-text">在命令模式下按下:（英文冒号）就进入了底线命令模式。</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%98%B2%E7%81%AB%E5%A2%99%EF%BC%9A"><span class="toc-number">1.0.16.1.</span> <span class="toc-text">防火墙：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Bfirewall%E6%9C%8D%E5%8A%A1%E7%8A%B6%E6%80%81"><span class="toc-number">1.0.16.2.</span> <span class="toc-text">查看firewall服务状态</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E3%80%81%E9%87%8D%E5%90%AF%E3%80%81%E5%85%B3%E9%97%AD%E3%80%81firewalld-service%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.0.16.3.</span> <span class="toc-text">开启、重启、关闭、firewalld.service服务</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%80%E5%90%AF"><span class="toc-number">1.0.16.4.</span> <span class="toc-text">开启</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%87%8D%E5%90%AF"><span class="toc-number">1.0.16.5.</span> <span class="toc-text">重启</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%97%AD"><span class="toc-number">1.0.16.6.</span> <span class="toc-text">关闭</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E9%98%B2%E7%81%AB%E5%A2%99%E8%A7%84%E5%88%99"><span class="toc-number">1.0.16.7.</span> <span class="toc-text">查看防火墙规则</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3"><span class="toc-number">1.0.16.8.</span> <span class="toc-text">开启端口</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
   
-    <article id="post-Java知识与Jvm" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/02/Java%E7%9F%A5%E8%AF%86%E4%B8%8EJvm/">Java知识与Jvm</a>
-    </h1>
   
 
-	<!--显示阅读次数-->
-
-        
-        <a href="/2021/02/02/Java%E7%9F%A5%E8%AF%86%E4%B8%8EJvm/" class="archive-article-date">
-  	<time datetime="2021-02-02T09:10:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><h3 id="java-开发环境"><a href="#java-开发环境" class="headerlink" title="java 开发环境"></a>java 开发环境</h3><h5 id="java-开发环境-java-development-kit-简称-JDK"><a href="#java-开发环境-java-development-kit-简称-JDK" class="headerlink" title="java 开发环境 (java development kit 简称 JDK)"></a>java 开发环境 (java development kit 简称 JDK)</h5><h5 id="java-运行环境-java-runtime-environment-简称-JRE"><a href="#java-运行环境-java-runtime-environment-简称-JRE" class="headerlink" title="java 运行环境 (java runtime environment 简称 JRE)"></a>java 运行环境 (java runtime environment 简称 JRE)</h5><blockquote>
-<p>如果仅仅想运行 java 程序, 安装 JRE 就够了. JRE 是面向 java 程序使用者的 . 但如果想要进一步开发 java 程序, 就需要安装 JDK , 它是面向 java 程序的开发者 .</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2021/02/02/Java%E7%9F%A5%E8%AF%86%E4%B8%8EJvm/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/02/Java%E7%9F%A5%E8%AF%86%E4%B8%8EJvm/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Markdown语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/30/Markdown%E8%AF%AD%E6%B3%95/">Markdown语法</a>
-    </h1>
   
 
-	<!--显示阅读次数-->
-
-        
-        <a href="/2021/01/30/Markdown%E8%AF%AD%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2021-01-30T11:58:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>​</p>
-<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h5 id="使用-号可表示-1-6-级标题，一级标题对应一个-号，二级标题对应两个-号，以此类推。"><a href="#使用-号可表示-1-6-级标题，一级标题对应一个-号，二级标题对应两个-号，以此类推。" class="headerlink" title="使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推。"></a>使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推。</h5><p><img src="Markdown/1.png" alt="标题"></p>
-        
-          <a class="article-more-a" href="/2021/01/30/Markdown%E8%AF%AD%E6%B3%95/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/30/Markdown%E8%AF%AD%E6%B3%95/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Java实现冒泡排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/29/Java%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">Java实现冒泡排序</a>
-    </h1>
   
 
-	<!--显示阅读次数-->
-
-        
-        <a href="/2021/01/29/Java%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" class="archive-article-date">
-  	<time datetime="2021-01-29T14:26:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、冒泡排序："><a href="#一、冒泡排序：" class="headerlink" title="一、冒泡排序："></a>一、冒泡排序：</h2><p>利用冒泡排序对数组进行排序</p>
-        
-          <a class="article-more-a" href="/2021/01/29/Java%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/29/Java%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-你真的知道什么是前后端分离吗？" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/28/%E4%BD%A0%E7%9C%9F%E7%9A%84%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88%E6%98%AF%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%90%97%EF%BC%9F/">你真的知道什么是前后端分离吗？</a>
-    </h1>
-  
-
-	<!--显示阅读次数-->
-
-        
-        <a href="/2021/01/28/%E4%BD%A0%E7%9C%9F%E7%9A%84%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88%E6%98%AF%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%90%97%EF%BC%9F/" class="archive-article-date">
-  	<time datetime="2021-01-28T08:07:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://xiaoshuai.opvs.me/wp-content/uploads/2021/01/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210121191123.jpg" alt="前后端分离"><br>在我的脑海中一提到前端和后端，基本上第一个出现的区别点就是:<strong>后端是跟数据库跟服务器打交道的，前端是跟浏览器打交道的。</strong></p>
-        
-          <a class="article-more-a" href="/2021/01/28/%E4%BD%A0%E7%9C%9F%E7%9A%84%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88%E6%98%AF%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%90%97%EF%BC%9F/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/28/%E4%BD%A0%E7%9C%9F%E7%9A%84%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88%E6%98%AF%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E5%90%97%EF%BC%9F/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第二篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第二篇博客文章</a>
-    </h1>
-  
-
-	<!--显示阅读次数-->
-
-        
-        <a href="/2021/01/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2021-01-27T09:27:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="我的博客文章编写"><a href="#我的博客文章编写" class="headerlink" title="我的博客文章编写"></a>我的博客文章编写</h1>
-        
-          <a class="article-more-a" href="/2021/01/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-    </h1>
-  
-
-	<!--显示阅读次数-->
-
-        
-        <a href="/2021/01/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2021-01-27T06:26:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="我的第一篇博客"><a href="#我的第一篇博客" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h2><p>这是我的第一个技术博客，会记录一些博客内容，同时也会同步博客内容到我的公众号<code>帅猿客栈</code>。</p>
-<h2 id="永远热泪盈眶-永远积极向上"><a href="#永远热泪盈眶-永远积极向上" class="headerlink" title="永远热泪盈眶 永远积极向上"></a>永远热泪盈眶 永远积极向上</h2>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/27/hello-world/">Hello World</a>
-    </h1>
-  
-
-	<!--显示阅读次数-->
-
-        
-        <a href="/2021/01/27/hello-world/" class="archive-article-date">
-  	<time datetime="2021-01-27T06:15:42.179Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-        
-          <a class="article-more-a" href="/2021/01/27/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/27/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -877,8 +488,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
